@@ -1,0 +1,28 @@
+@mixin animate($time) {
+	animation-timing-function:ease-in-out;
+	-webkit-animation-timing-function:ease-in-out;
+
+	-moz-transition: $time;
+  -ms-transition: $time;
+  -o-transition: $time;
+  -webkit-transition: $time;
+  transition: $time;
+}
+
+@mixin wrap($width) {
+	max-width: $width;
+	display:block;
+	margin: 0 auto;
+} 
+
+@mixin post-list-with-thumbnail {
+  li {
+    list-style-type:none;
+    margin: 0 0 1em 0;
+    position:relative;
+    img {
+      float:left;
+      margin-right: 10px;
+    }
+  }
+}

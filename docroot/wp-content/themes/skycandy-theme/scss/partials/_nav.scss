@@ -1,0 +1,176 @@
+.nav-outer {
+	background: $darkred;
+	margin-bottom:1.5em;
+	.nav-wrap {
+		max-width: $max-width;
+		margin: 0 auto;
+
+		nav {
+			background: $darkred;
+			display: inline-block;
+			ul {
+				list-style-type: none;
+			}
+			a {
+				color: #fff;
+				border-bottom: 0 none;
+			}
+			.menu-site-menu-container {
+				@extend .clearfix;
+				#menu-site-menu {
+					li {
+						float:left;
+						padding: 1em .75em;
+						border-left: 1px solid $accentred;
+						border-right: 1px solid $darkerred;
+						font-family: $sans;
+						font-weight: bold;
+						margin: 0;
+						font-size: .9em;
+						@include breakpoint(max-width $search-break) {
+							padding: 1em .8em;
+						}
+						.sub-menu {
+							@extend .hidden;
+							z-index: 999;
+							background: $darkerred;
+							max-height: 0px;
+							margin: 1em 0 0 -1em;
+							li {
+								float:none;
+								border-left: 0 none;
+								border-right: 0 none;
+								border-bottom: 1px solid $accentred;
+								font-size: .8em;
+							}
+						}
+					}
+					li:hover {
+						.sub-menu {
+							@include breakpoint(min-width $menu-break) {
+								position:absolute;
+								visibility: visible;
+								max-height: 1000px;
+							}	
+						}
+					}
+					li.current-menu-item {
+						background: $offred;
+					}
+				}
+			}
+		}
+		#searchform {
+			display: inline-block;
+			float:right;
+			margin: .6em 0 0 0;
+			width: 21.73913%;
+			@include breakpoint(max-width $search-break) {
+				display:none;
+			}
+			label {
+				@extend .hidden;
+			}
+			input[type="text"] {
+				padding: 3px;
+				border-radius: 5px;
+				border: 1px solid $darkerred;
+				width: 80%;
+			}
+			input[type="submit"] {
+				text-indent: -9999px;
+				background: #620600 url('../images/search-icon.png') top left no-repeat;
+				padding: 2px;
+				width: 16px;
+				height: 16px;
+				border: 0 none;
+				cursor: pointer;
+			}
+		}
+	}
+	.nav-wrap > a {
+		display:none;
+		.icon-align-justify {
+			margin-left: 5px;
+		}
+	}
+	@include breakpoint(max-width $menu-break) {
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height:50px;
+		z-index:1000;
+		.nav-wrap {
+			nav {
+				display:block;
+				.menu-site-menu-container {
+					#menu-site-menu {
+						max-height: 0px;
+						visibility: hidden;
+						li {
+							float:none;
+							display:block;
+							background: $darkerred;
+							width: 100%;
+							padding: 1em 0;
+							a {
+								margin-left: 1em;
+							}
+							i {
+								display: none;
+							}
+						}
+						li > ul.sub-menu {
+							max-height: 0px;
+							width:100%;
+							margin-left: 0;
+							li {
+								box-sizing:border-box;
+								-moz-box-sizing:border-box;
+								background:$accentred;
+								border-top: 1px solid $darkerred;
+								padding-left: 2em;	
+								width:100%;
+								max-height: 0px;
+							}
+						}
+						li > ul.expanded {
+							position:static;
+							visibility: visible;
+							max-height: 1000px;
+							li {
+								max-height:1000px;
+							}
+						}
+					}
+					#menu-site-menu.expanded {
+						max-height: 1000px;
+						visibility: visible;
+						margin-top: 15px;
+						i {
+							display: inline-block;
+							float:right;
+							margin-right: 50px;
+						}
+					}
+				}
+			}
+		}
+		.nav-wrap > a {
+			display:block;
+			font-size:1.2em;
+			color: #fff;
+			margin: .8em 2em 0 0;
+			text-transform: uppercase;
+			font-family: $sans;
+			border-bottom: 0 none;
+			text-align: right;
+		}	
+	}
+}
+@include breakpoint(max-width $menu-break) {
+	html.js {
+		margin-top:0!important;
+	}
+}

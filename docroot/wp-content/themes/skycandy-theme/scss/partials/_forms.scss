@@ -1,0 +1,34 @@
+.ninja-forms-form-wrap {
+  .ninja-forms-form {
+    .text-wrap.label-above, .text-wrap.label-left {
+      input[type="text"] {
+        width:100%;
+        @include breakpoint($menu-break) {
+          width: 50%;
+        }
+      }
+    }
+    .list-dropdown-wrap.label-above {
+      max-width: 50%;
+      @include breakpoint($menu-break) {
+        max-width: 100%;
+      }
+    }
+    .submit-wrap.label-above, .submit-wrap.label-left {
+      input[type="submit"] {
+        @include sassy-button('matte', 10px, 1.4em, #ddd, #ccc, #222, 'inset');
+      }
+    }
+    .list-dropdown-wrap.label-above {
+      select {
+        max-width: 50%;
+        @include breakpoint(max-width $menu-break) {
+          max-width: 100%;
+        }
+      }
+      @include breakpoint(max-width $menu-break) {
+        max-width: 100%;
+      }
+    } 
+  }
+}

@@ -1,0 +1,50 @@
+#comments {
+	#reply-title {
+		margin-bottom: 0;
+	}
+	label {
+		display:block;
+		margin-bottom:0;
+	}
+	textarea {
+		width: 100%;
+	}
+	.logged-in-as {
+		font-size: .8em;
+		font-family: $sans;
+	}
+	.comment-form-comment {
+		margin-bottom: 0;
+	}
+	.form-allowed-tags {
+		font-size: .8em;
+	}
+	.form-submit {
+		#submit {
+			@include sassy-button('matte', 5px, 1.4em, #eee, #ccc, #333, 'inset');
+		}
+	}
+	li {
+		border-left: 1px solid $darkred;
+		border-top: 1px solid $darkred;
+		padding: .5em .5em 0 .5em;
+		article {
+			img {
+				float:left;
+				margin-right: 1.5em;
+				max-width: 50px;
+				margin: 0 .5em .5em 0;
+			}
+			h4 {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+			time {
+				display:block;
+			}
+			p {
+				clear:both;
+			}
+		}
+	}
+}

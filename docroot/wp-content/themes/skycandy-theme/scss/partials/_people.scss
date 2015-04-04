@@ -1,0 +1,22 @@
+body.single-people {
+	h2 {
+		margin-bottom: 0;
+	}
+	.wp-post-image {
+		float:left;
+		margin-right: 1em;
+		@include breakpoint(max-width $menu-break) {
+			display:block;
+			margin: 0 auto 20px auto;
+			float: none;
+		}
+	}
+	.role {
+		font-family: $sans;
+		font-size: .8em;
+	}
+}
+
+.sidebar .instructor_list {
+	@include post-list-with-thumbnail;
+}

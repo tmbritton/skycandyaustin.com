@@ -1,0 +1,214 @@
+$header-img: image-url('logo-white-stacked.png', false, false);
+$background-img: image-url('cloth_alike.png', false, false);
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+html.js { 
+	height: 100%; 
+	//margin-top: 0!important;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -86px;
+}
+.push, footer {
+	height: 86px;
+}
+body {
+	height: 100%;
+	background: $background-img;
+	font-family: $sans;
+	@include breakpoint(max-width $menu-break) {
+		margin-top:50px;
+	}
+	img {
+		max-width:100%;
+		height:auto;
+	}
+	.header-wrap {
+		background-color: #af0a00;
+		color: #fff;
+		@include breakpoint(max-width $menu-break) {
+			margin-bottom: 20px;
+		}
+		header {
+			@include wrap($max-width);
+			@include clearfix;
+		}
+		h1 {
+			margin: 0;
+			padding: .6em 0 .4em 0;
+			text-align: center;
+			@include breakpoint($menu-break) {
+				@include grid-span(1, 1);
+				text-align:left;
+			}	
+			img {
+				max-height: 90px;
+				margin: 0 auto;
+				display: block;
+				@include breakpoint($menu-break) {
+					margin: 0;
+				}	
+			}
+			span {
+				font-family: $sans;
+				display: block;
+				margin: 5px 0;
+			}
+		}
+		address {
+			font-family: $sans;
+			font-size:1em;
+			margin: 1.5em 0 1.5em 0;
+			text-align: center;
+			a { 
+				color: #fff;
+				border-bottom: 1px dotted #fff;
+			}
+			a:hover {
+				border-bottom: 1px solid #fff;
+			}
+			@include breakpoint($menu-break) {
+				@include grid-span(1, 2);
+				margin-top: 3em;
+				margin-bottom: 0px;
+				font-size: .8em;
+				text-align:left;
+			}	
+		}
+		#register {
+			margin: 0 auto 15px;
+			padding: 0;
+			text-align:center;
+			display:block;
+			font-family: $sans;
+			line-height: 1.1;
+			a {
+				@include sassy-button('matte', 10px, 1.4em, $brightorange, $brightorange, #fff, 'inset');
+				border-bottom: 0 none;
+				@include breakpoint($menu-break) {
+					font-size: 1.2em;
+				}
+				@include breakpoint(max-width 720px) {
+					font-size: 1.1em;
+				}
+				span {
+					font-size: .7em;
+				}
+			}
+			@include breakpoint($menu-break) {
+				@include grid-span(1, 3);
+				margin-top:2.3em;
+				margin-bottom: 0;
+			}	
+		}
+		form.newsletter {
+			@include breakpoint(max-width $menu-break) {
+				display: none;
+			}
+			margin: 1.8em 0 0 0;
+			padding: 0;
+			label {
+				color: #fff;
+				font-size: .8em;
+				display: block;
+				margin: 0 0 5px 0;
+				@include breakpoint(max-width 740px) {
+					font-size: .7em;
+				}
+			}
+			input.email {
+				margin: 0 0 5px 0;
+				font-family: $sans;
+				width: 90%;
+				border-radius: 5px;
+				border: 1px solid $darkred;
+				padding: 3px;
+			}
+			input.button {
+				@include sassy-button('matte', 5px, 1.4em, #eee, #ccc, #333, 'inset');
+				font-size: .8em;
+				font-family: $sans;
+			}
+			@include breakpoint($menu-break) {
+				@include grid-span(1, 4);
+			}	
+		}
+	}
+	#content {
+		@include wrap($max-width);
+	}
+	#main {
+		padding: 0 20px;
+		margin: 0 0 1.5em 0;
+		@extend .clearfix;
+		@include breakpoint($menu-break) {
+			@include grid-span(3, 1);
+			padding: 0;
+		}
+	}
+	.sidebar {
+		padding: 0 20px;
+		@extend .clearfix;
+		@include breakpoint($menu-break) {
+			@include grid-span(1, 4);
+			padding: 0;
+		}
+		li {
+			margin-bottom: 0;
+		}
+		h3 {
+			margin-bottom: .5em;
+		}
+		ul {
+			margin-bottom: 1em;
+		}
+	}
+	@include breakpoint(max-width $menu-break){
+		#wpadminbar {
+			display: none;
+		}
+	}
+	footer {
+		margin-top: -28px;
+		clear:both;
+		//padding:20px;
+		text-align:center;
+		background: $darkred;
+		p {
+			padding-top:20px;
+			color: #fff;
+			font-family: $sans;
+		}
+	}
+	.alignright {
+		float:right; 
+		margin:0 0 1em 1em
+	}
+	.alignleft {
+		float:left;
+		margin:0 1em 1em 0
+	}
+	.aligncenter {
+		display: block; 
+		margin-left: auto; 
+		margin-right: auto
+	}
+	.author {
+		font-family: $sans;
+		font-size: .8em;
+	}
+	.byline {
+		margin: 0 0 20px 0;
+	}
+	.classes {
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+

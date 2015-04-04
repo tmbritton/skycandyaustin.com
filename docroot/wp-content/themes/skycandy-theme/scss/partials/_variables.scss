@@ -1,0 +1,57 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+//Colors
+$logored: #e30b00;
+$offred: #af0a00;
+$darkred: #620600;
+$darkerred: #370400;
+$palered: #e74f45;
+$palegreen: #d8e817;
+$accentred: #62221e;
+$orangered: #C6300A;
+$orange: #BC4809;
+$intenseorange: #FB0E00;
+$blue: #0D87FB;
+$brightorange: #F9810C;
+
+//Basic Type
+$sans: 'Helvetica-Nueue', Helvetica, Arial, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$mono: Courier, monospace;
+
+
+.clearfix {
+	@include clearfix;
+}
+
+.hidden {
+	visibility: hidden;
+	//text-indent: -9999px;
+	position: absolute;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 10px rgba(50, 50, 50, 0.75);
+}
+
+.class_register {
+  @include sassy_button('flat',5px,16px,$logored);
+  color: white;
+  font-family: $sans;
+}  
+
+$measure-break: 524px;
+$menu-break: 680px;
+$search-break: 920px;
+
+$max-width: 1000px;
+
+$grids: 2;
+$grids: add-grid(4 at $menu-break);
+$gutters: .2;

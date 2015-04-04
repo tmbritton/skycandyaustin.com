@@ -1,0 +1,69 @@
+body.home {
+	h2 {
+		font-size:1.4em;
+	}
+	.home-page-pods {
+		@extend .clearfix;
+		.pod {
+			@extend .clearfix;
+			list-style-type: none;
+			margin-bottom: 1em;
+			img {
+				float:left;
+				margin-right: 10px;
+			}
+			h2 {
+				margin: 0 0 .5em 110px;
+			}
+			p {
+				margin: 0 0 0 110px
+			}
+		}
+		li:nth-of-type(odd){
+			@include breakpoint($search-break){
+				@include grid-span(2, 1);
+				clear:both;
+			}
+		}
+		li:nth-of-type(even){
+			@include breakpoint($search-break){
+				@include grid-span(2, 3);
+			}
+		}
+	}
+	.sidebar {
+		h2 {
+			margin: 0 0 1em 0;
+		}
+		.latest-blog-posts, .instructor_list {
+			@include post-list-with-thumbnail;
+		}
+		.class-descriptions {
+			li {
+				margin: 0;
+			}
+		}
+	}
+	.sidebar > div:first-child {
+		background: $offred;
+		padding: 10px 10px 5px 10px;
+		border: 1px solid $darkerred;
+		margin-bottom: 20px;
+		li {
+			list-style: disc;
+			margin-left:20px;
+			color:#fff;
+		}
+		a {
+			color: #fff;
+			border-bottom: 1px dotted #fff;
+			&:hover {
+				border-bottom: 1px solid #fff;
+			}
+		}
+		h3 {
+			color: #fff;
+			font-size: 1.4em;
+		}
+	}
+}

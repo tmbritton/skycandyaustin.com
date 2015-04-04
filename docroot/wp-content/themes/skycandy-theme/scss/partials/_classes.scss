@@ -1,0 +1,40 @@
+body.single-class {
+	h2 {
+		display: inline-block;
+		@include breakpoint(max-width $menu-break) {
+			display:block;
+		}			
+	}
+	.wp-post-image {
+		float:left;
+		margin-right: 1em;
+	}
+	.class_register {
+		float:right;
+		@include breakpoint(max-width $menu-break) {
+			float:none;
+			margin-bottom: 20px;
+		}	
+	}
+	.class_register:hover {
+		color:white;
+	}
+}
+
+.skycandy_classes_shortcode {
+	img {
+		float:left;
+		margin: 0 20px 20px 0;
+	}
+	.class_register {
+		margin: 0 0 20px 0;
+	}
+	.class_register:hover {
+		color: #fff;
+		border-bottom: 0 none;
+	}
+	li {
+		border-bottom: 1px solid $darkred;
+		margin-bottom: 20px;
+	}
+}
