@@ -34,8 +34,6 @@ node_modules/
 /docroot/wp-content/mysql.sql
 /docroot/wp-content/plugins/*
 /docroot/wp-content/themes/*
-!/docroot/wp-content/themes/skycandy-theme
-
 
 # wp core (as of 3.4.1)
 /docroot/db-config.php
@@ -108,4 +106,4 @@ w3tc-config
 *.avi
 
 # Allow custom code directories
-!/docroot/wp-content/themes/custom-theme*
+!/docroot/wp-content/themes/skycandy-theme
