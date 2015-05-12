@@ -7,6 +7,7 @@
 *.map
 Thumbs.db
 refresh.sh
+.sass-cache
 
 # npm modules
 node_modules/

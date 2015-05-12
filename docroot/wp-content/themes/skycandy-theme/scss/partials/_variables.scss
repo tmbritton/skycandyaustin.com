@@ -52,6 +52,6 @@ $search-break: 920px;
 
 $max-width: 1000px;
 
-$grids: 2;
-$grids: add-grid(4 at $menu-break);
+//$grids: 2;
+@include add-grid(4);
 $gutters: .2;

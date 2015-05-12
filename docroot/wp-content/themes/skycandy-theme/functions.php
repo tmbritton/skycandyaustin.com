@@ -132,11 +132,8 @@
 		?>
 		<h1>
 			<a itemprop="url" href="<?php echo home_url(); ?>">
-				<img src="<?php bloginfo('template_url'); ?>/images/logo-white-stacked.png" alt="<?php bloginfo( 'name' ); ?>" />
+				<img src="<?php bloginfo('template_url'); ?>/images/skycandy-logo-horizontal.png" alt="<?php bloginfo( 'name' ); ?>" />
 			</a>
-			<span itemprop="description">
-				<?php echo get_bloginfo( 'description' ); ?>
-			</span>	
 		</h1>
 		<?php
 	}
