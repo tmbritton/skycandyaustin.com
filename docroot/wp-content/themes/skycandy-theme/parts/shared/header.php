@@ -41,7 +41,7 @@
 	<div class="wrap clearfix">
 
 		<p id="register">
-			<a class="sky-complementary" href="https://clients.mindbodyonline.com/ASP/home.asp?studioid=28231">Sign Up For Classes <span class="small">(mindbodyonline.com)</span></a>
+			<a class="sky-complementary" href="https://clients.mindbodyonline.com/ASP/home.asp?studioid=28231" target="_blank">Sign Up For Classes <span class="small">(mindbodyonline.com)</span></a>
 		</p>
 
 		<form class="newsletter" action="http://skycandyaustin.us2.list-manage.com/subscribe/post?u=20bdc94a1b8b37f1d5d29f680&amp;id=89620fda68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
