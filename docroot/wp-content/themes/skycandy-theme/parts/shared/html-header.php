@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png"/>
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/screen.css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/screen.css?v=2" />
 		<script src="<?php bloginfo('template_url'); ?>/js/vendor/custom.modernizr.js"></script>
 		<?php wp_head(); ?>
 	</head>
