@@ -5,7 +5,7 @@
     var find = "clients.mindbodyonline.com";
     $('a').each(function( index ) {
       if ($(this).attr('href').indexOf(find) > -1) {
-        $(this).attr('onclick', "_gaq.push(['_link', this.href]); return false;");
+        $(this).attr('onclick', "_gaq.push(['_link', this.href]);");
       }
     });
 
