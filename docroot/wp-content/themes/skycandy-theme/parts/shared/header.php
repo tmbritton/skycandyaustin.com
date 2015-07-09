@@ -19,7 +19,7 @@
 
 	<address class="revamped" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<h2 class="location-title">reVamped</h2> 
-		<span itemprop="streetAddress">2400 E Cesar Chavex St.</span><br /><span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">78702</span> <a class="map" href="https://goo.gl/maps/77CbL" title="View on Google Maps"><i class="icon-map-marker"></i></a><br />
+		<span itemprop="streetAddress">2400 E Cesar Chavez St.</span><br /><span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">78702</span> <a class="map" href="https://goo.gl/maps/77CbL" title="View on Google Maps"><i class="icon-map-marker"></i></a><br />
 		<span itemprop="telephone">(512) 800-4998</span><br /><a href="mailto:info@skycandyaustin.com">info@skycandyaustin.com</a>
 	</address>
 
