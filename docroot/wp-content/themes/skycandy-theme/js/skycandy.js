@@ -2,13 +2,14 @@
   $(document).ready(function(){
     $('img').parent('a').addClass('imglink');
     //Add onclick to mindbody links
+    /*
     var find = "clients.mindbodyonline.com";
     $('a').each(function( index ) {
       if ($(this).attr('href').indexOf(find) > -1) {
         $(this).attr('onclick', "_gaq.push(['_link', this.href]);");
       }
     });
-
+    */
     $('.flexslider').flexslider({
       animation: "slide"
     });
