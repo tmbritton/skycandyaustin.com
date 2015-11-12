@@ -259,6 +259,7 @@ body.single-class .class_register { float: right; }
 @media (max-width: 680px) { body.single-class .class_register { float: none; margin-bottom: 20px; } }
 body.single-class .class_register:hover { color: white; }
 
+.skycandy_classes_shortcode { list-style-type: none; }
 .skycandy_classes_shortcode img { float: left; margin: 0 20px 20px 0; }
 .skycandy_classes_shortcode .class_register { margin: 0 0 20px 0; }
 .skycandy_classes_shortcode .class_register:hover { color: #fff; border-bottom: 0 none; }
@@ -907,5 +908,3 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] { width: .75em; }
 .icon-folder-close-alt:before { content: "\f114"; }
 
 .icon-folder-open-alt:before { content: "\f115"; }
-
-/*# sourceMappingURL=screen.css.map */
